@@ -1,0 +1,4 @@
+.env
+__pycache__/
+.vercel
+src/linkedin_posting_bot/crew_v1.py

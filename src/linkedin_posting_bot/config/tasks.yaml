@@ -1,0 +1,39 @@
+news_research_task:
+  description: >
+    Search for the latest AI, Data, or IT-related news from reputable sources like {sources_links}.
+    Identify the most relevant single news article that is fresh, trending, and likely to generate interest.
+  expected_output: >
+    A single news article with its headline, URL, and a brief summary.
+  agent: market_news_monitor_agent
+
+news_filter_task:
+  description: >
+    Validate that the selected news article is unique and has not been posted before.
+    Ensure the article is fresh, relevant, and aligned with the audience's interests.
+  expected_output: >
+    The validated single news article with its headline, URL, and summary.
+  agent: quality_assurance_agent
+
+post_generator_task:
+  description: >
+    Generate a LinkedIn-ready post for the selected news article.
+    The post should include:
+    - A catchy headline.
+    - A summary paragraph of 4–5 lines, providing a concise but engaging overview of the news.
+    - A recommended tone to maximize audience engagement.
+  expected_output: >
+    A LinkedIn post containing:
+    - Headline.
+    - A 4–5 line summary paragraph.
+    - {hashtags}
+    - {emojies}
+    - Tone recommendation.
+  agent: content_creator_agent
+
+image_generator_task:
+  description: >
+    Create a visually appealing image based on the headline and summary of the single news post.
+    Ensure the image aligns with the content and enhances engagement.
+  expected_output: >
+    A single AI-generated image corresponding to the news post's headline and summary.
+  agent: content_creator_graphic_agent

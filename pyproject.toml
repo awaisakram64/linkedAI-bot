@@ -1,0 +1,20 @@
+[project]
+name = "linkedin_posting_bot"
+version = "0.1.0"
+description = "linkedin_posting_bot using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.79.4,<1.0.0"
+]
+
+[project.scripts]
+linkedin_posting_bot = "linkedin_posting_bot.main:run"
+run_crew = "linkedin_posting_bot.main:run"
+train = "linkedin_posting_bot.main:train"
+replay = "linkedin_posting_bot.main:replay"
+test = "linkedin_posting_bot.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
