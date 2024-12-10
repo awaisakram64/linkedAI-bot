@@ -1,1 +1,4 @@
 Flask
+crewai
+yaml
+crewai-tools
