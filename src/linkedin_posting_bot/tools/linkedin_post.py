@@ -1,7 +1,5 @@
 import re
-import json
 import requests
-from pathlib import Path
 
 class Posts():
     """Class to create a Post object for LinkedIn and post it on LinkedIn (Personal Profile or Organization Page)"""
