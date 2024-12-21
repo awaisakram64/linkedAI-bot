@@ -1,4 +1,4 @@
+PyYAML
 Flask
 crewai
-pyyaml
 crewai-tools
